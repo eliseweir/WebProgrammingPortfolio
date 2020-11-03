@@ -1,0 +1,75 @@
+$bgColor: #8B162C;
+$pink: #E42D86;
+$orange: #FAA351;
+$darkOrange: #D23719;
+$brightOrange: #EE702A;
+$textColor: white;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+
+.navbar-custom {
+  background-color: $bgColor;
+  /* change the brand and text color */
+  .navbar-brand, .navbar-text {
+    color: rgba(255,255,255,.8);
+  }
+  /* change the link color */
+  .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+  }
+  /* change the color of active or hovered links */
+  .nav-item.active .nav-link,
+  .nav-item:hover .nav-link {
+    color: #ffffff;
+  }
+
+  img {
+    width: 75px;
+  }
+}
+
+main {
+  margin-top: 100px;
+  color: white;
+  background-image: url("../images/bridge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $darkOrange;
+  background-blend-mode: soft-light;
+  min-height: calc(100vh - 160px);
+}
+
+footer {
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: $bgColor;
+  color: $textColor;
+
+  #social {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    a {
+      padding-right: 15px;
+    }
+    img {
+      width: 30px;
+    }
+  }
+}
