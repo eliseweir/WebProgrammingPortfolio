@@ -16,6 +16,7 @@ body {
 }
 
 .navbar-custom {
+  min-height: 100px;
   background-color: #8B162C;
   /* change the brand and text color */
   /* change the link color */
@@ -37,6 +38,7 @@ body {
 
 .navbar-custom img {
   width: 75px;
+  border-radius: 40px;
 }
 
 main {
@@ -48,6 +50,27 @@ main {
   background-color: #D23719;
   background-blend-mode: soft-light;
   min-height: calc(100vh - 160px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-text {
+  max-width: 70%;
+}
+
+main .main-text h1 {
+  text-align: center;
+}
+
+main .main-text h2 {
+  text-align: justify;
 }
 
 footer {
@@ -76,5 +99,17 @@ footer #social a {
 
 footer #social img {
   width: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .navbar-brand {
+    font-size: initial;
+  }
+  span.responsive {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
