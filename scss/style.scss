@@ -22,6 +22,7 @@ body {
 
 
 .navbar-custom {
+  min-height: 100px;
   background-color: $bgColor;
   /* change the brand and text color */
   .navbar-brand, .navbar-text {
@@ -39,6 +40,7 @@ body {
 
   img {
     width: 75px;
+    border-radius: 40px;
   }
 }
 
@@ -51,6 +53,31 @@ main {
   background-color: $darkOrange;
   background-blend-mode: soft-light;
   min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main-text {
+    max-width: 70%;
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: justify;
+    }
+  }
+  .card {
+    color: white;
+    margin: 2rem;
+    border: 0px;
+    .card-body {
+        background-color: $bgColor;
+        padding: 0.5rem;
+        .card-title {
+          text-align: center;
+          font-weight: bold;
+        }
+    }
+  }
 }
 
 footer {
@@ -71,5 +98,17 @@ footer {
     img {
       width: 30px;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+      font-size: 10px;
+  }
+  .navbar-brand {
+    font-size: initial;
+  }
+  span.responsive {
+    display: none;
   }
 }
