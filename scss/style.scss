@@ -64,6 +64,26 @@ main {
     h2 {
       text-align: justify;
     }
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-indent: 2rem;
+    }
+    .skills {
+      display: flex;
+      justify-content: center;
+      .skill {
+        background-color: white;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        margin: 20px;
+      }
+    }
   }
   .card {
     color: white;
