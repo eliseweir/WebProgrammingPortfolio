@@ -100,8 +100,13 @@ main {
   
   .card {
     color: white;
-    margin: 2rem;
+    margin: 3rem auto;
     border: 0px;
+    max-width: 400px;
+    .image { 
+      position: relative; 
+      width: 100%;
+    }
     .card-body {
         background-color: $bgColor;
         padding: 0.5rem;
@@ -146,9 +151,10 @@ footer {
   }
 }
 
-.image { 
-  position: relative; 
-  width: 100%;
+@media only screen and (min-width: 1200px) {
+  html {
+      font-size: 20px;
+  }
 }
 
 .description { 

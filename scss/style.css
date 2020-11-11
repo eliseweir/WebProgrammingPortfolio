@@ -121,8 +121,14 @@ main .main-skills .skills .skill {
 
 main .card {
   color: white;
-  margin: 2rem;
+  margin: 3rem auto;
   border: 0px;
+  max-width: 400px;
+}
+
+main .card .image {
+  position: relative;
+  width: 100%;
 }
 
 main .card .card-body {
@@ -175,9 +181,10 @@ footer #social img {
   }
 }
 
-.image {
-  position: relative;
-  width: 100%;
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 .description {
