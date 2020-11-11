@@ -98,6 +98,8 @@ main .main-skills .skills {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .main-skills .skills .skill {
