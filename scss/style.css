@@ -70,27 +70,28 @@ main {
           align-items: center;
 }
 
-main .main-text {
-  max-width: 70%;
-}
-
-main .main-text h1 {
+main h1 {
   text-align: center;
 }
 
-main .main-text h2 {
+main h2 {
   text-align: justify;
 }
 
-main .main-text h3 {
+main h3 {
   text-align: center;
 }
 
-main .main-text p {
+main p {
   text-indent: 2rem;
 }
 
-main .main-text .skills {
+main .main-description {
+  max-width: 70%;
+  margin: auto auto;
+}
+
+main .main-skills .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +100,7 @@ main .main-text .skills {
           justify-content: center;
 }
 
-main .main-text .skills .skill {
+main .main-skills .skills .skill {
   background-color: white;
   height: 90px;
   width: 90px;

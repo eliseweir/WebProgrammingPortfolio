@@ -63,20 +63,23 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  .main-text {
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: justify;
+  }
+  h3 {
+    text-align: center;
+  }
+  p {
+    text-indent: 2rem;
+  }
+  .main-description {
     max-width: 70%;
-    h1 {
-      text-align: center;
-    }
-    h2 {
-      text-align: justify;
-    }
-    h3 {
-      text-align: center;
-    }
-    p {
-      text-indent: 2rem;
-    }
+    margin: auto auto;
+  }
+  .main-skills {
     .skills {
       display: flex;
       justify-content: center;
@@ -92,6 +95,7 @@ main {
       }
     }
   }
+  
   .card {
     color: white;
     margin: 2rem;
