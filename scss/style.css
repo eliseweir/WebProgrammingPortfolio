@@ -51,20 +51,6 @@ a:hover {
   border-radius: 40px;
 }
 
-#me {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#me img {
-  width: 10rem;
-  border-radius: 100%;
-}
-
 main {
   margin-top: 100px;
   color: white;
@@ -74,15 +60,6 @@ main {
   background-color: #D23719;
   background-blend-mode: soft-light;
   min-height: calc(100vh - 160px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 main h1 {
@@ -101,12 +78,21 @@ main p {
   text-indent: 2rem;
 }
 
-main .main-description {
-  max-width: 70%;
-  margin: auto auto;
+main #me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-main .main-skills .skills {
+main #me img {
+  width: 10rem;
+  border-radius: 100%;
+}
+
+main .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +103,7 @@ main .main-skills .skills {
       flex-wrap: wrap;
 }
 
-main .main-skills .skills .skill {
+main .skills .skill {
   background-color: white;
   height: 90px;
   width: 90px;
@@ -169,6 +155,24 @@ main .card .card-body img, main .card .card-footer img {
   width: 30px;
 }
 
+main .card .description {
+  /*display: none;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
 footer {
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -216,23 +220,5 @@ footer #social img {
   html {
     font-size: 20px;
   }
-}
-
-.description {
-  /*display: none;*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-  padding: 2rem;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
