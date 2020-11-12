@@ -47,7 +47,22 @@ a:hover {
 
 .navbar-custom img {
   width: 75px;
+  margin-right: 1rem;
   border-radius: 40px;
+}
+
+#me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#me img {
+  width: 10rem;
+  border-radius: 100%;
 }
 
 main {
@@ -126,19 +141,32 @@ main .card {
   max-width: 400px;
 }
 
+main .card a {
+  color: white;
+}
+
+main .card a:hover {
+  text-decoration: none;
+  color: #EE702A;
+}
+
 main .card .image {
   position: relative;
   width: 100%;
 }
 
-main .card .card-body {
+main .card .card-body, main .card .card-footer {
   background-color: #8B162C;
   padding: 0.5rem;
+  text-align: center;
 }
 
-main .card .card-body .card-title {
-  text-align: center;
+main .card .card-body .card-title, main .card .card-footer .card-title {
   font-weight: bold;
+}
+
+main .card .card-body img, main .card .card-footer img {
+  width: 30px;
 }
 
 footer {
@@ -171,13 +199,16 @@ footer #social img {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   .navbar-brand {
     font-size: initial;
   }
   span.responsive {
     display: none;
+  }
+  #logo {
+    width: 40px;
   }
 }
 

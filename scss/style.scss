@@ -47,7 +47,17 @@ a:hover {
 
   img {
     width: 75px;
+    margin-right: 1rem;
     border-radius: 40px;
+  }
+}
+
+#me {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 10rem;
+    border-radius: 100%;
   }
 }
 
@@ -103,16 +113,26 @@ main {
     margin: 3rem auto;
     border: 0px;
     max-width: 400px;
+    a {
+      color: white;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $brightOrange;
+    }
     .image { 
       position: relative; 
       width: 100%;
     }
-    .card-body {
+    .card-body, .card-footer {
         background-color: $bgColor;
         padding: 0.5rem;
+        text-align: center;
         .card-title {
-          text-align: center;
           font-weight: bold;
+        }
+        img {
+          width: 30px;
         }
     }
   }
@@ -141,13 +161,16 @@ footer {
 
 @media only screen and (max-width: 600px) {
   html {
-      font-size: 10px;
+      font-size: 12px;
   }
   .navbar-brand {
     font-size: initial;
   }
   span.responsive {
     display: none;
+  }
+  #logo {
+    width: 40px;
   }
 }
 
