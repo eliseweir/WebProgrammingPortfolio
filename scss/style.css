@@ -120,8 +120,22 @@ main .skills .skill {
   margin: 20px;
 }
 
+main .skills .skill img {
+  width: 60px;
+}
+
+main .skills .skill #CSS {
+  width: 85px;
+}
+
+main .skills .skill #java {
+  color: #5382a1;
+  font-weight: bold;
+}
+
 main .card {
   color: white;
+  background-color: black;
   margin: 3rem auto;
   border: 0px;
   max-width: 400px;
